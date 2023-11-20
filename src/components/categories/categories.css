@@ -1,0 +1,27 @@
+.portfolio .row-portfolio-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio .row-portfolio-1 .categories{
+    padding: .5rem 1rem;
+    color: #5a5858;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio .row-portfolio-1 .categories:hover{
+    background-color: var(--nav-bg);
+    color: #fff;
+    transition: all .50s ease;
+}
+
+.portfolio .row-portfolio-1 .active{
+    background-color: var(--nav-bg);
+    color: #fff;
+}

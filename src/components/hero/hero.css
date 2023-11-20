@@ -1,0 +1,182 @@
+.hero{
+    margin: 5rem 0;
+    padding: 1rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero .logo-sosmed{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .logo-sosmed .icon{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    color: black;
+    transition: all .5s ease;
+}
+
+.hero .logo-sosmed .icon:hover{
+    color: var(--second-color);
+    transition: all .5s ease;
+}
+
+.hero .hero-desc{
+    width: 35%;
+}
+
+.hero .hero-desc h3{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+}
+
+.hero .hero-desc .hero-sub-title{
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(194, 192, 192);
+    font-weight: 900;
+}
+
+.hero .hero-desc .hero-sub-desc{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: grey;
+    font-size: 1.4rem;
+}
+
+.hero .hero-desc .hero-btn-portfolio {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-right: 10px;
+}
+
+.hero .hero-desc .hero-btn-portfolio .btn-portfolio{
+    padding: 1rem 1.3rem;
+    background-color: var(--nav-bg);
+    color: #fff;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: all .5s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-desc .hero-btn-portfolio .resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 1.3rem;
+    transition: all .5s ease;
+}
+
+.hero .hero-desc .hero-btn-portfolio .resume:hover{
+    border-color: rgba(0, 0, 0, .45);
+    color: rgba(0, 0, 0, .45);
+}
+
+.hero .hero-desc .hero-btn-portfolio .btn-portfolio:hover{
+    background-color: #123163;
+}
+
+.hero .profile-picture{
+    background-image: url('./../../../public/img/profile-picture.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 28rem;
+    width: 25rem;
+    background-color: var(--nav-bg);
+    overflow: hidden;
+    animation: profile_animation 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animation{
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .hero{
+        flex-wrap: wrap;
+        margin-top: 7rem;
+        justify-content: center;
+    }
+
+    .hero .logo-sosmed{
+        width: 30%;
+        order: 1;
+    }
+
+    .hero .hero-desc{
+        width: 80%;
+        order: 3;
+    }
+
+    .hero .profile-picture{
+        width: 50%;
+        order: 2;
+    }
+}
+
+@media (max-width: 814px){
+    .hero .profile-picture{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 552px) {
+    .hero .logo-sosmed{
+        order: 2;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .hero .hero-desc{
+        order: 3;
+        width: 100%;
+    }
+
+    .hero .profile-picture{
+        order: 1;
+    }
+
+    .hero .hero-desc h3{
+        font-size: 2rem;
+    }
+
+    .hero .hero-desc .hero-sub-desc{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 418px){
+    .hero .hero-desc .hero-btn-portfolio .btn-portfolio {
+        font-size: 1rem;
+        padding: .8rem .8rem;
+    }
+    .hero .hero-desc .hero-btn-portfolio .resume {
+        padding: 0 .5rem;
+        font-size: 1rem;
+    }
+}

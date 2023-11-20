@@ -1,0 +1,67 @@
+.certificate{
+  padding: 10rem 7% 20rem;
+}
+
+.certificate .title-certificate{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.certificate .desc-certificate{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.card-certificate{
+  /* width: 28rem; */
+  /* height: 40rem; */
+  padding: .5rem;
+  position: relative;
+}
+
+.card-certificate .thumb-image-certificate{
+  width: 100%;
+  /* height: 40rem; */
+  height: 20%;
+  border: 3px solid var(--nav-bg);
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-certificate .thumb-image-certificate .ant-image .ant-image-img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.card-certificate .title-inner-certificate{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'PT Serif Caption', serif;
+}
+
+.card-certificate .desc-inner-certificate{
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.3rem;
+  color: grey;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.card-certificate .link-inner-certificate{
+  padding: .8rem 1rem;
+  background-color: var(--nav-bg);
+  color: white;
+  display: inline-block;
+  border-radius: 2rem;
+  transition: all .50s ease;
+  position: absolute;
+  right: 2%;
+  display: flex;
+  align-items: center;
+}

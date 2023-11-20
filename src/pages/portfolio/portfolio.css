@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
+:root{
+    --nav-bg: #0A1931;
+    --second-color: #FFC947;
+    --third-color: #185ADB;
+}
+
+.portfolio{
+    padding: 10rem 10% 30rem;
+    background-color: #d3e0eb;
+
+}
+
+.portfolio .title-portfolio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.portfolio .desc-portfolio{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+}
+
+.portfolio .title-portfolio, .portfolio .desc-portfolio{
+    text-align: center;
+}
+
+
+.portfolio .row-portfolio-2{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
