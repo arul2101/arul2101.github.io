@@ -19,11 +19,9 @@ import PictAnime2 from './img/portfolio/my-anime-chan/2.png';
 import PictAnime3 from './img/portfolio/my-anime-chan/3.png';
 import PictAnime4 from './img/portfolio/my-anime-chan/4.png';
 
-import { FaCheck } from "react-icons/fa";
-
 export default [
   {
-    id: 5,
+    id: 7,
     category: "Web",
     title: "Dashboard Booking Management",
     img: [
@@ -39,17 +37,19 @@ export default [
     link: "https://skuy-hotels.vercel.app",
     github: "none",
     config: {
-      title: "Tech Stack : ",
+      title: "App Information",
+      width: "1000px",
       content: (
-        <div>
+        <div className='modal-portfolio'>
           <ul>
-            <li>React JS | React Query, React Router</li>
+            <h3>Tech Stack : </h3>
+            <li>React JS (React Query, React Router)</li>
             <li>TailwindCSS</li>
             <li>Supabase</li>
             <li>Ant Design</li>
           </ul>
-          <p style={{ marginLeft: "-35px", fontSize: "20px", marginTop: "5px", marginBottom: "5px", display: 'flex', gap: "10px", alignItems: "center", fontWeight: "500" }}><FaCheck style={{ color: "#0A1931" }} />Features: </p>
           <ul>
+            <h3>Features : </h3>
             <li>Employee can create user login</li>
             <li>Employee can update full name and password</li>
             <li>Employee can create and delete a booking</li>
@@ -68,42 +68,76 @@ export default [
     },
   },
   {
-    id: 7,
+    id: 6,
     category: "Web",
     title: "My Anime Chan",
     img: [PictAnime1, PictAnime2, PictAnime3, PictAnime4],
     link: "https://my-anime-chan.vercel.app/",
     github: "https://github.com/arul2101/my-anime-chan",
     config: {
-      title: "Tech Stack : ",
+      title: "App Information",
+      width: "800px",
       content: (
-        <ul>
-          <li>Next JS</li>
-          <li>TailwindCSS</li>
-          <li>Axios</li>
-          <li>Framer Motion</li>
-          <li>TypeScript</li>
-        </ul>
-
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>Next JS</li>
+            <li>TailwindCSS</li>
+            <li>Axios</li>
+            <li>Framer Motion</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
       ),
       okType: "default"
     },
   },
   {
-    id: 2,
+    id: 5,
+    category: "Web",
+    title: "Company Website",
+    img: [
+      Image4
+    ],
+    link: "https://arul2101.github.io/rizer-digital",
+    github: "https://github.com/arul2101/rizer-digital",
+    config: {
+      title: "App Information",
+      width: "800px",
+      content: (
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>React Js</li>
+            <li>React Router</li>
+            <li>Framer Motion</li>
+            <li>React Slick</li>
+            <li>Vanilla CSS</li>
+          </ul>
+        </div>
+      ),
+      okType: "default"
+    }
+  },
+  {
+    id: 4,
     category: "Web",
     title: "Coffe Shop Website",
     img: [Image2],
     link: "https://arul2101.github.io/warkop-sobat-website",
     github: "https://github.com/arul2101/warkop-sobat-website",
     config: {
-      title: 'Tech Stack : ',
+      title: "App Information",
+      width: "800px",
       content: (
-        <ul>
-          <li>React Js</li>
-          <li>React Router</li>
-          <li>Vanilla CSS</li>
-        </ul>
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>React Js</li>
+            <li>React Router</li>
+            <li>Vanilla CSS</li>
+          </ul>
+        </div>
       ),
       okType: "default"
     }
@@ -116,52 +150,37 @@ export default [
     link: "https://arul2101.github.io/tour-id",
     github: "https://github.com/arul2101/tour-id",
     config: {
-      title: 'Tech Stack : ',
+      title: "App Information",
+      width: "800px",
       content: (
-        <ul>
-          <li>React Js</li>
-          <li>React Router</li>
-          <li>Vanilla CSS</li>
-        </ul>
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>React Js</li>
+            <li>React Router</li>
+            <li>Vanilla CSS</li>
+          </ul>
+        </div>
       ),
       okType: "default"
     }
   },
   {
-    id: 4,
-    category: "Web",
-    title: "Company Website",
-    img: [
-      Image4
-    ],
-    link: "https://arul2101.github.io/rizer-digital",
-    github: "https://github.com/arul2101/rizer-digital",
-    config: {
-      title: 'Tech Stack : ',
-      content: (
-        <ul>
-          <li>React Js</li>
-          <li>React Router</li>
-          <li>Framer Motion</li>
-          <li>React Slick</li>
-          <li>Vanilla CSS</li>
-        </ul>
-      ),
-      okType: "default"
-    }
-  },
-  {
-    id: 6,
+    id: 2,
     category: "rest-api",
     title: "Rest api forum diskusi",
     img: ["https://placehold.co/1080x720"],
     github: "https://github.com/arul2101/forum-diskusi-restapi",
     config: {
-      title: 'Tech Stack : ',
+      title: "App Information",
+      width: "800px",
       content: (
-        <ul>
-          <li>Laravel 10</li>
-        </ul>
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>Laravel 10</li>
+          </ul>
+        </div>
       ),
       okType: "default"
     }
@@ -174,12 +193,17 @@ export default [
     link: "https://arul2101.github.io/todolist-app",
     github: "https://github.com/arul2101/todolist-app",
     config: {
-      title: 'Tech Stack : ',
+      title: "App Information",
+      width: "800px",
       content: (
-        <ul>
-          <li>React Js (useReducer)</li>
-          <li>Vanilla CSS</li>
-        </ul>
+        <div className='modal-portfolio'>
+          <ul>
+            <h3>Tech Stack : </h3>
+            <li>React Js (useReducer)</li>
+            <li>Vanilla CSS</li>
+          </ul>
+        </div>
+
       ),
       okType: "default"
     }

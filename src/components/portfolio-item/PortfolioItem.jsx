@@ -22,21 +22,21 @@ export default function PortfolioItem({ portfolio }) {
         <div className={portfolio.link ? 'inner-portfolio' : 'align-end'}>
           {portfolio.link && (
             <a
-            href={portfolio.link}
-            target="_blank"
-            rel="noreferrer"
-            className='inner-link-demo'
+              href={portfolio.link}
+              target="_blank"
+              rel="noreferrer"
+              className='inner-link-demo'
             >Demo <FiSend /></a>
           )}
           <div>
             {portfolio.github !== "none" && (
               <a
                 href={portfolio.github}
-                target="_blank" 
+                target="_blank"
                 rel="noreferrer"
               ><FiGithub className='button-info' /></a>
             )}
-            
+
 
             <Tooltip
               title="info"

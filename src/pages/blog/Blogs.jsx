@@ -12,7 +12,7 @@ import BlogItem from '../../components/blog-item/BlogItem';
 // Data
 import dataBlog from '../../data/dataBlog';
 
-export default function Blogs(){
+export default function Blogs() {
   useLayoutEffect(() => {
     document.title = "Sidiq Yanuar | My Blogs"
   })
@@ -26,7 +26,7 @@ export default function Blogs(){
       transition={{ duration: .75, ease: "linear" }}
     >
       <h3 className='title-blog'>Blog</h3>
-      <p className='desc-blog'>Jadikan kamu menjadi lebih produktif dan terhibur melalui blog ini 🔥</p>
+      <p className='desc-blog'>Make you more productive through this blog 🔥</p>
 
       <div className="row-blog">
         {dataBlog.map(item => <BlogItem blog={item} key={item.id} />)}

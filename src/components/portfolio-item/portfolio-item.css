@@ -1,11 +1,11 @@
-.portfolio .row-portfolio-2 .card{
+.portfolio .row-portfolio-2 .card {
   /* height: 22rem; */
   width: 25rem;
   border-radius: 1rem;
   background-color: #fff;
 }
 
-.portfolio .row-portfolio-2 .card .thumb-image-portfolio{
+.portfolio .row-portfolio-2 .card .thumb-image-portfolio {
   width: 95%;
   height: 15rem;
   overflow: hidden;
@@ -13,12 +13,12 @@
   border-radius: 1rem;
 }
 
-.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-portfolio .inner-link{
+.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-portfolio .inner-link {
   display: flex;
   align-items: center;
 }
 
-.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-portfolio .inner-link-demo{
+.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-portfolio .inner-link-demo {
   padding: .5rem 1rem;
   background-color: var(--nav-bg);
   color: white;
@@ -28,12 +28,12 @@
   transition: all .50s ease;
 }
 
-.portfolio .row-portfolio-2 .card .card-desc-portfolio{
+.portfolio .row-portfolio-2 .card .card-desc-portfolio {
   padding: .5rem 3%;
   font-family: 'Poppins', sans-serif;
 }
 
-.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-link-demo:hover{
+.portfolio .row-portfolio-2 .card .card-desc-portfolio .inner-link-demo:hover {
   background-color: #123163;
   transition: all .50s ease;
 }
@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-.align-end{
+.align-end {
   display: flex;
   flex-direction: column-reverse;
   align-items: end;
@@ -57,7 +57,15 @@
   cursor: pointer;
 }
 
-.btn-modal{
+.btn-modal {
   background-color: var(--nav-bg);
   color: red;
+}
+
+.modal-portfolio {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
