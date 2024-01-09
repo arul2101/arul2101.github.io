@@ -35,7 +35,7 @@ export default [
       Pict8,
     ],
     link: "https://skuy-hotels.vercel.app",
-    github: "none",
+    github: "https://github.com/arul2101/skuy-hotels",
     config: {
       title: "App Information",
       width: "1000px",
